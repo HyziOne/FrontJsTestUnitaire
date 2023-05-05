@@ -1,0 +1,42 @@
+{
+    "name": "my-message-board",
+    "version": "1.0.0",
+    "description": "A simple message board application using Vanilla JavaScript and a custom backend API.",
+    "main": "src/main.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node main.js",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ceocheschool/tested-vanilla-js-app.git"
+    },
+    "keywords": [
+        "message board",
+        "javascript",
+        "vanilla"
+    ],
+    "author": "Your Name <your.email@example.com>",
+    "license": "MIT", 
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/preset-env": "^7.21.4",
+        "babel-jest": "^29.5.0",
+        "jest": "^27.4.5",
+        "node-fetch": "^3.3.1"
+    },
+    "jest": {
+        "testEnvironment": "jsdom",
+        "transform": {
+            "^.+\\.jsx?$": "babel-jest"
+        },
+        "moduleNameMapper": {
+            "axios": "axios/dist/node/axios.cjs"
+        }
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "http-server": "^14.1.1"
+    }
+}
