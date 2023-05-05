@@ -60,4 +60,3 @@ npm test
 ```
 
 Assurez-vous que le serveur de développement est en cours d'exécution avant d'exécuter les tests.
-# TestUnitaireJs
